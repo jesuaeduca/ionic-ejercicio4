@@ -7,21 +7,21 @@
   <script src="https://unpkg.com/@ionic/core@4.0.0-beta.7/dist/ionic.js"></script>
   <script src="cordova.js"></script>
   <script src="gallery.js"></script>
-  <title>Gallery!</title>
+  <title>GaleriaION</title>
 </head>
 <body onload="onLoad()">
   <ion-app>
     <ion-header>
-      <ion-toolbar>
-        <ion-title>Gallery!</ion-title>
-        <ion-buttons slot="primary">
+      <ion-toolbar color="dark">
+        <ion-title color="primary">GaleriaION</ion-title>
+        <ion-buttons color="primary" slot="primary">
           <ion-button onclick="button('prev')"><ion-icon slot="icon-only" name="skip-backward"></ion-icon></ion-button>
           <ion-button onclick="button('play')"><ion-icon slot="icon-only" name="play"></ion-icon></ion-button>
           <ion-button onclick="button('pause')"><ion-icon slot="icon-only" name="pause"></ion-icon></ion-button>
           <ion-button onclick="button('next')"><ion-icon slot="icon-only" name="skip-forward"></ion-icon></ion-button>
         </ion-buttons>
       </ion-toolbar>
-      <ion-toolbar>
+      <ion-toolbar color="primary:">
         <ion-item>
           <ion-range min="0" max="5000" value="4000">
             <ion-icon slot="start" size="small" name="speedometer"></ion-icon>
@@ -31,26 +31,28 @@
       </ion-toolbar>    
     </ion-header>
     <ion-content>
-      <ion-tabs>
-        <ion-tab label="Alicante" icon="walk">
-          <ion-slides id="walk">
-            <ion-slide><ion-img src="img/alicante1.jpg"></ion-img></ion-slide>
-            <ion-slide><ion-img src="img/alicante2.jpg"></ion-img></ion-slide>
-            <ion-slide><ion-img src="img/alicante3.jpg"></ion-img></ion-slide>
+      <ion-tabs color="primary">
+        <ion-tab label="Buhos" icon="bug">
+          <ion-slides id="bug">
+            <ion-slide><ion-img src="img/buho1.jpg"></ion-img></ion-slide>
+            <ion-slide><ion-img src="img/buho2.jpg"></ion-img></ion-slide>
+            <ion-slide><ion-img src="img/buho3.jpg"></ion-img></ion-slide>
           </ion-slides>
         </ion-tab>
-        <ion-tab label="Madrid" icon="train">
-          <ion-slides id="train">
-            <ion-slide><ion-img src="img/madrid1.jpg"></ion-img></ion-slide>
-            <ion-slide><ion-img src="img/madrid2.jpg"></ion-img></ion-slide>
-            <ion-slide><ion-img src="img/madrid3.jpg"></ion-img></ion-slide>
+        <ion-tab label="Gatos" icon="logo-github">
+          <ion-slides id="logo-github">
+            <ion-slide><ion-img src="img/gato1.png"></ion-img></ion-slide>
+            <ion-slide><ion-img src="img/gato2.jpg"></ion-img></ion-slide>
+            <ion-slide><ion-img src="img/gato3.jpg"></ion-img></ion-slide>
+            <ion-slide><ion-img src="img/gato4.jpg"></ion-img></ion-slide>
           </ion-slides>
         </ion-tab>
-        <ion-tab label="París" icon="airplane">
-          <ion-slides id="airplane">
-            <ion-slide><ion-img src="img/paris1.jpg"></ion-img></ion-slide>
-            <ion-slide><ion-img src="img/paris2.jpg"></ion-img></ion-slide>
-            <ion-slide><ion-img src="img/paris3.jpg"></ion-img></ion-slide>
+        <ion-tab label="Postales" icon="camera">
+          <ion-slides id="camera">
+            <ion-slide><ion-img src="img/postal1.jpg"></ion-img></ion-slide>
+            <ion-slide><ion-img src="img/postal2.jpg"></ion-img></ion-slide>
+            <ion-slide><ion-img src="img/postal3.jpg"></ion-img></ion-slide>
+            <ion-slide><ion-img src="img/postal4.jpg"></ion-img></ion-slide>
           </ion-slides>
         </ion-tab>
       </ion-tabs>

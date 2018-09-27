@@ -36,6 +36,9 @@ function button(action) {
         var s = document.getElementById(tab.icon);
         if      (action == 'play')  s.startAutoplay();
         else if (action == 'pause') s.stopAutoplay();           
+        else if (action == 'next') s.slideNext();           
+        else if (action == 'prev') s.slidePrev();           
         s.update();
     });
+    navigator.vibrate(40);
 }
