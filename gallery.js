@@ -34,8 +34,14 @@ function stopAll() {
 function button(action) { 
     getTabs().getSelected().then(function(tab) {
         var s = document.getElementById(tab.icon);
-        if      (action == 'play')  s.startAutoplay();
-        else if (action == 'pause') s.stopAutoplay();           
+        if      (action == 'play')  {
+            s.startAutoplay();
+            document.getElementById('bplay').color="success";
+        }
+        else if (action == 'pause') {
+            s.stopAutoplay();           
+            document.getElementById('bplay').color="dafault";
+        }
         else if (action == 'next') s.slideNext();           
         else if (action == 'prev') s.slidePrev();           
         s.update();
